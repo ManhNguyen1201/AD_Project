@@ -11,24 +11,24 @@
 <div class="home"> 
 <div class="pix_diapo">
 
-    <div data-thumb="<?php echo web_root;?>image/image1.jpg">
-        <img src="<?php echo web_root;?>image/image1.jpg">
+    <div data-thumb="<?php echo web_root;?>image/1.jpg">
+        <img src="<?php echo web_root;?>image/1.jpg">
     </div>
 
-    <div data-thumb="<?php echo web_root;?>image/image2.jpg">
-        <img src="<?php echo web_root;?>image/image2.jpg"> 
+    <div data-thumb="<?php echo web_root;?>image/2.jpg">
+        <img src="<?php echo web_root;?>image/2.jpg"> 
     </div>
 
-    <div data-thumb="<?php echo web_root;?>image/image3.jpg" data-time="7000">
-        <img src="<?php echo web_root;?>image/image3.jpg">
+    <div data-thumb="<?php echo web_root;?>image/3.jpg" data-time="7000">
+        <img src="<?php echo web_root;?>image/3.jpg">
     </div>       
 
-    <div data-thumb="<?php echo web_root;?>image/image4" data-time="7000">
-        <img src="<?php echo web_root;?>image/image4.jpg">
+    <div data-thumb="<?php echo web_root;?>image/4" data-time="7000">
+        <img src="<?php echo web_root;?>image/4.jpg">
     </div>
 
-    <div data-thumb="<?php echo web_root;?>image/image5.jpg" data-time="7000">
-        <img src="<?php echo web_root;?>image/image5.jpg">
+    <div data-thumb="<?php echo web_root;?>image/5.jpg" data-time="7000">
+        <img src="<?php echo web_root;?>image/5.jpg">
     </div> 
 </div><!-- #pix_diapo --> 
     

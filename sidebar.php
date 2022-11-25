@@ -23,7 +23,7 @@
  <div class="panel panel-default"> 
     <div class="panel-body">
     <div class="list-group">
-     <div class="well well-sm " style="background-color:#025eb1;color:#fff;"><b> Recent Post </b> </div>
+     <div class="well well-sm " style="background-color:#f2721e;color:#fff;"><b> Recent Post </b> </div>
         <ul >
         <?php 
             $mydb->setQuery("SELECT  *
@@ -48,7 +48,7 @@ if(!isset($_SESSION['IDNO'])){
 ?>
  <div class="panel panel-default">
     <div class="panel-body">
-        <div class="well well-sm"  style="background-color:#025eb1;color:#fff;"><b >  Login </b> </div>
+        <div class="well well-sm"  style="background-color:#f2721e;color:#fff;"><b >  Login </b> </div>
 
             <form class="form-horizontal span6" action="login.php" method="POST">
                 <div class="form-group">

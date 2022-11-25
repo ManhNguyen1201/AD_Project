@@ -11,7 +11,7 @@
             <h2 class="page-header">List of Instructors </h2>
        		</div>
        		<div class="col-lg-4" >
-       			<img  id="imglogo"  style="float:right;" src="<?php echo web_root; ?>img/school_seal_100x100.jpg" >
+       			<img  id="imglogo"  style="float:right;" src="<?php echo web_root; ?>img/Logo.webp" >
        		</div>
        		</div>
         	<!-- /.col-lg-12 -->

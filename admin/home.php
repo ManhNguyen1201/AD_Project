@@ -4,6 +4,13 @@
 		text-align: center;
 		font-size: 75px; 
 	}
+	.panel-heading{
+		background-color: #f2721e !important;
+		border-color: #f2721e !important;
+	}
+	.panel-primary{
+		border-color:#f2721e !important; 
+	}
 </style>
 
 <div class="col-md-3">

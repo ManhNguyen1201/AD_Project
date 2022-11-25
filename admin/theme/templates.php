@@ -46,6 +46,18 @@
     #imglogo{
         width: 100px;
     }
+
+     .navbar-defaul ul{
+    
+     }
+    .navbar-default ul li{
+     
+    }
+    .sidebar{
+  
+    }
+
+
 </style>
 </head>
 
@@ -72,8 +84,8 @@ admin_confirm_logged_in();
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand"  href="<?php echo web_root; ?>index.php" > 
-                <img src="<?php echo web_root; ?>img/school_seal_100x100.jpg" height="23">
-              Online Student Management System</a>
+                <img src="<?php echo web_root; ?>img/Logo.webp" height="30">
+              Education Management</a>
             </div>
             <!-- /.navbar-header -->
 

@@ -79,7 +79,7 @@ body {
 
 form[role=login] {
   color: #5d5d5d;
-  background: #f7e448;
+  background: white;
   padding: 26px;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -124,7 +124,7 @@ form[role=login] {
       <section class="login-form"> <? echo check_message(); ?>;
         <form method="post" action="" role="login">
           <!-- <img src="http://i.imgur.com/RcmcLv4.png" class="img-responsive" alt="" /> -->
-           <img src="../img/logo.png" height="25px" class="img-responsive" alt="" />
+           <img src="../img/Logo.webp" height="25px" class="img-responsive" alt="" />
          
           <input type="input" name="user_email" placeholder="Username" required class="form-control input-lg" value="" />
           

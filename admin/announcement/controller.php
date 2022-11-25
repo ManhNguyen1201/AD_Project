@@ -29,7 +29,7 @@ switch ($action) {
 	function doInsert(){
 		global $mydb; 
 		if(isset($_POST['save'])){
-
+			date_default_timezone_set('Asia/Ho_Chi_Minh');
 			$autonum = new Autonumber();
 			$id = $autonum->set_autonumber("BLOGID");
 			$BLOGID = date("Y").$id->AUTO;

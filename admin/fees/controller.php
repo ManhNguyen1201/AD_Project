@@ -35,6 +35,7 @@ switch ($action) {
 			message("All field is required!","error");
 			redirect('index.php?view=add');
 		}else{	
+			date_default_timezone_set('Asia/Ho_Chi_Minh');
 
 			$fee = New FEES();
 			// $subj->USERID 		= $_POST['user_id'];

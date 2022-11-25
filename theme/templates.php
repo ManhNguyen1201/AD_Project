@@ -228,7 +228,7 @@
             </li>
             
             <li class="dropdown-toggle <?php echo ($_GET['q']=='blogs') ? "active" : false;?>" >
-              <a href="<?php echo web_root.'index.php?q=blogs'; ?>">Announcement</a>
+              <a href="<?php echo web_root.'index.php?q=blogs'; ?>">Notification</a>
             </li>
  
              <li class="dropdown-toggle <?php echo ($_GET['q']=='contact') ? "active" : false;?>">

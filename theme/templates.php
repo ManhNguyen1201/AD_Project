@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<title><?php echo $title; ?> | Online CHMBAC Student Management System.</title>
+
 
      <!-- Bootstrap Core CSS -->
 <link href="<?php echo web_root; ?>css/bootstrap.min.css" rel="stylesheet">
@@ -83,6 +83,19 @@
 .carttxtactive:hover {
    color: white;
 }
+.navbar{
+  background-color: #f2721e;
+border-color: #f2721e!important
+}
+.navbar-collapse{
+  background-color: #f2721e;
+  border-color: #f2721e!important
+}
+.navbar-fixed-top{
+  background-color: #f2721e;
+  border-color: #f2721e!important
+}
+
 
 .menu  li {
   left: 0px;
@@ -124,7 +137,7 @@
 <div class="navbar-fixed-top navbar-TOPsm container "    role="navigation">
   <div class="container">
     <div class="navbar-header">
-          <h5 class="navbar-menu p" >Online CHMBAC Student Management System.</h5>
+          
          <button type="button" class="navbar-toggle btn-xs p" data-toggle="collapse" data-target=".smMenu">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -199,7 +212,7 @@
  
   <div class=" container stretch " style="margin-top:-30px;"> 
     <div class="row">
-        <img  src="<?php echo web_root; ?>image/head1.jpg"   >  
+        <img  src="<?php echo web_root; ?>image/a.jpg"   >  
     </div>
   </div> 
  <div class="navbar   navbar-magbanua  container"    role="navigation">
@@ -281,7 +294,7 @@
              </div>
               <div class="col-lg-9">
                 <div class="panel panel-default">
-                  <div class="panel-heading" style="background-color:#025eb1;color:#fff;">
+                  <div class="panel-heading" style="background-color:#f2721e;color:#fff;">
                   <b><?php   
                   echo  $title . (isset($_GET['category']) ?  '  |  ' .$_GET['category'] : '' )?> </b> 
                   </div>
@@ -301,7 +314,7 @@
 
 ?>
        </div>
-            <footer class="panel-footer" style="background-color:#025eb1;color:#fff;" >
+            <footer class="panel-footer" style="background-color:#f2721e;color:#fff;" >
               <p align="center" >&copy; Online CHMBAC Student Management System.</p>
            </footer>
       </div>

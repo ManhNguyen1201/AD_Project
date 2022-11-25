@@ -45,7 +45,7 @@ switch ($action) {
 			message("All field is required!","error");
 			redirect('index.php?view=add');
 		}else{	
-
+			date_default_timezone_set('Asia/Ho_Chi_Minh');
 			$annoucement = New Announcement();
 			$annoucement->ANNOUNCEMENTID 	= $BLOGID;
 			$annoucement->ANNOUNCEMENT_TEXT = $ANNOUNCEMENT_TEXT;

@@ -8,6 +8,9 @@
     $course = New Course();
     $resCourse = $course->single_course($res->COURSE_ID);
 
+    // $subject = New Subject();
+    // $resSubject = $subject->single_subject($res->SUBJ_ID);
+
    ?>
     
   <style type="text/css">
@@ -16,9 +19,10 @@
     height:auto;
   }
     #img_profile >  a > img {
-    width: 100%;
-    height:auto;
+    width: 100px;
+    height:100px;
 }
+
 
 
   </style>
@@ -27,16 +31,15 @@
           <div class="panel">            
             <div id="img_profile" class="panel-body">
             <a href="" data-target="#myModal" data-toggle="modal" >
-            <img title="profile image" class="img-hover"   src="<?php echo web_root. 'student/'.  $res->STUDPHOTO; ?>">
+            <img src="https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/04/Anh-cute.jpg?ssl=1" class="img-hover"   src="<?php echo web_root. 'student/'.  $res->STUDPHOTO; ?>">
             </a>
              </div>
           <ul class="list-group">
           
-         
                <li class="list-group-item text-right"><span class="pull-left"><strong>Real name</strong></span> <?php echo $res->FNAME .' '.$res->LNAME; ?> </li>
+              <!--   <li class="list-group-item text-right"><span class="pull-left"><strong>Subject</strong></span> <?php echo $resSubject->SUBJ_CODE .' | '.$resSubject->SUBJ_DESCRIPTION; ?> </li>  -->
               <li class="list-group-item text-right"><span class="pull-left"><strong>Course</strong></span> <?php echo $resCourse->COURSE_NAME .' | '.$resCourse->COURSE_DESC; ?> </li>
-             
-            
+              
           </ul> 
                 
         </div>
@@ -68,18 +71,18 @@
           <input required="true"  class="form-control input-md" id="LNAME" name="LNAME" placeholder="Last Name" type="text" value="<?php echo $res->LNAME; ?>">
         </td> 
         <td>
-          <input class="form-control input-md" id="MI" name="MI" placeholder="MI" type="text" value="<?php echo $res->MNAME; ?>">
+          <input class="form-control input-md" id="MI" name="MI" placeholder="MI" maxlength="" type="text" value="<?php echo $res->MNAME; ?>">
         </td>
       </tr>
       <tr>
         <td><label>Address</label></td>
-        <td colspan="5"  >
+        <td colspan="2"  >
         <input required="true"  class="form-control input-md" id="PADDRESS" name="PADDRESS" placeholder="Permanent Address" type="text" value="<?php echo $res->HOME_ADD; ?>">
         </td> 
       </tr>
       <tr>
         <td ><label>Sex </label></td> 
-        <td colspan="2">
+        <td colspan="3">
           <label>
           <?php
             if ($res->SEX=='Male') {
@@ -107,13 +110,13 @@
          
       </tr>
       <tr><td><label>Place of Birth</label></td>
-        <td colspan="5">
+        <td colspan="3">
         <input required="true"  class="form-control input-md" id="BIRTHPLACE" name="BIRTHPLACE" placeholder="Place of Birth" type="text" value="<?php echo $res->BPLACE; ?>">
          </td>
       </tr>
       <tr>
         <td><label>Nationality</label></td>
-        <td colspan="2"><input required="true"  class="form-control input-md" id="NATIONALITY" name="NATIONALITY" placeholder="Nationality" type="text" value="<?php echo $res->NATIONALITY; ?>">
+        <td colspan="3"><input required="true"  class="form-control input-md" id="NATIONALITY" name="NATIONALITY" placeholder="Nationality" type="text" value="<?php echo $res->NATIONALITY; ?>">
               </td>
         <td><label>Religion</label></td>
         <td colspan="2"><input  required="true" class="form-control input-md" id="RELIGION" name="RELIGION" placeholder="Religion" type="text" value="<?php echo $res->RELIGION; ?>">
@@ -125,7 +128,7 @@
         <td colspan="3"><input required="true"  class="form-control input-md" id="CONTACT" name="CONTACT" placeholder="Contact Number" type="text" value="<?php echo $res->CONTACT_NO; ?>">
               </td>
         <td><label>Civil Status</label></td>
-        <td colspan="2">
+        <td colspan="3">
           <select class="form-control input-sm" name="CIVILSTATUS">
             <option value="<?php echo $res->STATUS; ?>"><?php echo $res->STATUS; ?></option>
              <option value="Single">Single</option>
@@ -137,7 +140,7 @@
      
       <tr>
         <td><label>Gaurdian</label></td>
-        <td colspan="2">
+        <td colspan="3">
           <input required="true"  class="form-control input-md" id="GUARDIAN" name="GUARDIAN" placeholder="Parents/Guardian Name" type="text"value="<?php echo isset($resguardian->GUARDIAN) ? $resguardian->GUARDIAN : ''; ?>">
         </td>
         <td><label>Contact No.</label></td>

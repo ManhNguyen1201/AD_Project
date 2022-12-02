@@ -53,7 +53,7 @@ $studAuto = New Autonumber();
       </tr>
       <tr>
         <td><label>Address</label></td>
-        <td colspan="5"  >
+        <td colspan="2"  >
         <input required="true"  class="form-control input-md" id="PADDRESS" name="PADDRESS" placeholder="Permanent Address" type="text" value="<?php echo isset($_POST['PADDRESS']) ? $_POST['PADDRESS'] : ''; ?>">
         </td> 
       </tr>
@@ -66,7 +66,7 @@ $studAuto = New Autonumber();
           </label>
         </td>
         <td ><label>Date of birth</label></td>
-        <td colspan="2"> 
+        <td colspan="1"> 
         <div class="input-group" >
                   <div class="input-group-addon"> 
                     <i class="fa fa-calendar"></i>
@@ -76,8 +76,8 @@ $studAuto = New Autonumber();
         </td>
          
       </tr>
-      <tr><td><label>Place of Birth</label></td>
-        <td colspan="5">
+      <tr><td><label>Address</label></td>
+        <td colspan="2">
         <input class="form-control input-md" id="BIRTHPLACE" name="BIRTHPLACE" placeholder="Place of Birth (* Optional)" type="text" value="<?php echo isset($_POST['BIRTHPLACE']) ? $_POST['BIRTHPLACE'] : ''; ?>">
          </td>
       </tr>
@@ -86,13 +86,13 @@ $studAuto = New Autonumber();
         <td colspan="2"><input class="form-control input-md" id="NATIONALITY" name="NATIONALITY" placeholder="Nationality (* Optional)" type="text" value="<?php echo isset($_POST['CONTACT']) ? $_POST['CONTACT'] : ''; ?>">
               </td>
         <td><label>Religion</label></td>
-        <td colspan="2"><input  class="form-control input-md" id="RELIGION" name="RELIGION" placeholder="Religion (* Optional)" type="text" value="<?php echo isset($_POST['RELIGION']) ? $_POST['RELIGION'] : ''; ?>">
+        <td colspan="1"><input  class="form-control input-md" id="RELIGION" name="RELIGION" placeholder="Religion (* Optional)" type="text" value="<?php echo isset($_POST['RELIGION']) ? $_POST['RELIGION'] : ''; ?>">
         </td>
         
       </tr>
       <tr>
       <td><label>Contact No.</label></td>
-        <td colspan="6"><input class="form-control input-md" id="CONTACT" name="CONTACT" placeholder="Contact Number (* Optional)" type="number" maxlength="11" value="<?php echo isset($_POST['CONTACT']) ? $_POST['CONTACT'] : ''; ?>">
+        <td colspan="2"><input class="form-control input-md" id="CONTACT" name="CONTACT" placeholder="Contact Number (* Optional)" type="number" maxlength="11" value="<?php echo isset($_POST['CONTACT']) ? $_POST['CONTACT'] : ''; ?>">
               </td>
         
       </tr>
@@ -117,8 +117,8 @@ $studAuto = New Autonumber();
         </td>
         
        
-        <td><label>Civil Status</label></td>
-        <td colspan="2">
+        <td><label> Status</label></td>
+        <td colspan="1">
           <select class="form-control input-sm" name="CIVILSTATUS">
             <option value="<?php echo isset($_POST['CIVILSTATUS']) ? $_POST['CIVILSTATUS'] : 'Select'; ?>">Select (* Optional)</option>
              <option value="Single">Single</option>
@@ -138,16 +138,16 @@ $studAuto = New Autonumber();
         </td>
       </tr> -->
       <tr>
-        <td><label>Gaurdian</label></td>
+        <td><label>Parents</label></td>
         <td colspan="2">
           <input class="form-control input-md" id="GUARDIAN" name="GUARDIAN" placeholder="Parents/Guardian Name (*optional)" type="text"value="<?php echo isset($_POST['GUARDIAN']) ? $_POST['GUARDIAN'] : ''; ?>">
         </td>
-        <td><label>Contact No.</label></td>
-        <td colspan="2"><input  class="form-control input-md" id="GCONTACT" name="GCONTACT" placeholder="Contact Number (*optional)" type="text" value="<?php echo isset($_POST['GCONTACT']) ? $_POST['GCONTACT'] : ''; ?>"></td>
+        <td><label>Contact Parents.</label></td>
+        <td colspan="1"><input  class="form-control input-md" id="GCONTACT" name="GCONTACT" placeholder="Contact Number (*optional)" type="text" value="<?php echo isset($_POST['GCONTACT']) ? $_POST['GCONTACT'] : ''; ?>"></td>
       </tr>
       <tr>
       <td></td>
-        <td colspan="5">  
+        <td colspan="2">  
           <button class="btn btn-success btn-lg" name="submit" type="submit">Save</button>
         </td>
       </tr>

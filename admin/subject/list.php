@@ -11,7 +11,7 @@
             <h2 class="page-header">List of Subjects per Course/Year <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> New</a>  </h2>
        		</div>
        		<div class="col-lg-4" >
-       			<img id="imglogo" style="float:right;" src="<?php echo web_root; ?>img/school_seal_100x100.jpg" >
+       			<img id="imglogo" style="float:right;" src="<?php echo web_root; ?>img/Logo.webp" >
        		</div>
        		</div>
         	<!-- /.col-lg-12 -->
@@ -34,15 +34,15 @@
 				  		<!-- <th>Section</th> -->
 				  		<th>Semester</th> 
 				  		<th>Status</th>
-				  		<th width="15%" >Action</th>
+				  		<th width="15%" style="text-align: center;" >Action</th>
 				 
 				  	</tr>	
 				  </thead> 
 				  <tbody>
 				  	<?php
-				  	$mydb->setQuery("SELECT * FROM  `tblsection` sec, `subject` s, `course` c WHERE sec.`SECTIONID`=s.`SECTIONID` AND s.COURSE_ID=c.COURSE_ID ");
+				  	// $mydb->setQuery("SELECT * FROM  `tblsection` sec, `subject` s, `course` c WHERE sec.`SECTIONID`=s.`SECTIONID` AND s.COURSE_ID=c.COURSE_ID ");
 
-				  		// $mydb->setQuery("SELECT * FROM `subject` s, `course` c WHERE s.COURSE_ID=c.COURSE_ID");
+				  		$mydb->setQuery("SELECT * FROM `subject` s, `course` c WHERE s.COURSE_ID=c.COURSE_ID");
 
 				  		$cur = $mydb->loadResultList();
 

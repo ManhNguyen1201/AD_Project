@@ -205,7 +205,7 @@ admin_confirm_logged_in();
                              </ul>
                         </li> 
                         <li>
-                             <a href="<?php echo web_root; ?>admin/announcement/index.php" ><i class="fa fa-microphone fa-fw"></i>  Announcement </a>
+                             <a href="<?php echo web_root; ?>admin/announcement/index.php" ><i class="fa fa-microphone fa-fw"></i>  Notification </a>
                     
                         </li> 
                       <?php } ?>
@@ -224,13 +224,13 @@ admin_confirm_logged_in();
                                      <a href="<?php echo web_root; ?>admin/maintenance/index.php" ><i class="fa fa-circle-o fa-fw"></i>  Set Semester </a>
                                 </li> 
                                 <li>
-                                     <a href="<?php echo web_root; ?>admin/department/index.php" ><i class="fa  fa-circle-o fa-fw"></i>  Department</a>
+                                     <a href="<?php echo web_root; ?>admin/department/index.php" ><i class="fa  fa-circle-o fa-fw"></i>  Class</a>
                                 </li> 
                                 <li>
                                      <a href="<?php echo web_root; ?>admin/course/index.php" ><i class="fa  fa-circle-o fa-fw"></i>  Courses </a>
                                  </li> 
                                 <li>
-                                     <a href="<?php echo web_root; ?>admin/subject/index.php"><i class="fa fa-circle-o fa-fw"></i> Curriculum </a>
+                                     <a href="<?php echo web_root; ?>admin/subject/index.php"><i class="fa fa-circle-o fa-fw"></i> Subject </a>
                                 </li> 
                                 <li>
                                      <a href="<?php echo web_root; ?>admin/sy/index.php"><i class="fa fa-circle-o fa-fw"></i> School Year </a>

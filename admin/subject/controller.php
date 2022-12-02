@@ -32,7 +32,7 @@ switch ($action) {
    
 	function doInsert(){
 		global $mydb;
-		if(isset($_POST['save'])){
+		if(isset($_POST['submit'])){
 
 
 		if ($_POST['SUBJ_CODE'] == "" OR $_POST['SUBJ_DESCRIPTION'] == "" OR $_POST['UNIT'] == ""

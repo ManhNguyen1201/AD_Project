@@ -9,7 +9,7 @@ class Database {
 	private $magic_quotes_active;
 	private $real_escape_string_exists;
 	
-	function __construct() {
+	function _construct() {
 		$this->open_connection();
 		$this->magic_quotes_active = get_magic_quotes_gpc();
 		$this->real_escape_string_exists = function_exists("mysqli_real_escape_string");
@@ -37,7 +37,7 @@ class Database {
 	}
 	
 	function executeQuery() {
-		$result = mysqli_query($this->conn,$this->sql_string);
+		$result = mysqli_query ($this->conn,$this->sql_string);
 		$this->confirm_query($result);
 		return $result;
 	}	

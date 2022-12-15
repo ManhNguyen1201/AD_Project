@@ -158,7 +158,7 @@
                     </div>
                   </div>
 
-<!-- 
+ 
               <div class="form-group">
                     <div class="col-md-8">
                       <label class="col-md-4 control-label" for=
@@ -227,7 +227,7 @@
                       </div>
                     </div>
                   </div> 
-                 <!--  <div class="form-group">
+                  <div class="form-group">
                     <div class="col-md-8">
                       <label class="col-md-4 control-label" for=
                       "AY">Academic Year:</label>
@@ -238,7 +238,7 @@
                             "Academic Year" type="text" value="<?php echo $res->AY; ?>" required>
                       </div>
                     </div>
-                  </div> -->
+                  </div> 
                    <div class="form-group">
                     <div class="col-md-8">
                       <label class="col-md-4 control-label" for=

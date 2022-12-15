@@ -7,7 +7,7 @@
  <div class="row">
       <div class="col-lg-12">
        	 <div class="col-lg-6">
-            <h1 class="page-header">List of Sections <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> New</a>  </h1>
+            <h1 class="page-header">List of Slots <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> New</a>  </h1>
        		</div>
        		<div class="col-lg-6" >
        			<img  id="imglogo" style="float:right;" src="<?php echo web_root; ?>img/Logo.webp" >
@@ -21,8 +21,8 @@
 				
 				  <thead>
 				  	<tr> 
-				  		<th>Section</th> 
-				  		<th width="10%" >Action</th>
+				  		<th>Slots</th> 
+				  		<th width="10%" style="text-align: center; color: red" >Action</th>
 				 
 				  	</tr>	
 				  </thead>     <!-- `COURSE_NAME`, `COURSE_LEVEL`, ``, `COURSE_DESC`, `DEPT_ID` -->

@@ -22,7 +22,7 @@
 				  <thead>
 				  	<tr> 
 				  		<th>School Year</th> 
-				  		<th width="10%" >Action</th>
+				  		<th width="10%" style="color: red; text-align: center;" >Action</th>
 				 
 				  	</tr>	
 				  </thead>     <!-- `COURSE_NAME`, `COURSE_LEVEL`, ``, `COURSE_DESC`, `DEPT_ID` -->

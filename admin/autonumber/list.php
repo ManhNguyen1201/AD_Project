@@ -20,7 +20,7 @@
 				  		 <!-- <input type="checkbox" name="chkall" id="chkall" onclick="return checkall('selector[]');">  -->
 				  		 Autonumber</th> 
 				  		  <th>Key</th>
-				  		 <th width="10%" align="center">Action</th>
+				  		 <th width="10%" style="color: red; text-align: center;">Action</th>
 				  	</tr>	
 				  </thead> 
 				  <tbody>

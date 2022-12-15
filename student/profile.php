@@ -28,7 +28,7 @@
           <div class="panel"  id="accordion">            
             <div id="img_profile" class="panel-body">
             <a href="" data-target="#myModal" data-toggle="modal" >
-            <img title="profile image" class="img-hover"   src="<?php echo web_root. 'student/'.  $res->STUDPHOTO; ?>">
+            <img src="img/anh-tham-mat.jpg" title="profile image" class="img-hover"   src="<?php echo web_root. 'student/'.  $res->STUDPHOTO; ?>">
             </a>
              </div>
           <ul class="list-group  ">
@@ -70,7 +70,7 @@
        check_message();   
        ?>
   <ul class="nav nav-tabs" id="myTab">
-    <li class="active"><a href="#grades" data-toggle="tab">Grades</a></li>
+    <li class="active"><a href="#grades" data-toggle="tab">Overall</a></li>
     
     <li><a href="#settings" data-toggle="tab">Update Account</a></li>
 

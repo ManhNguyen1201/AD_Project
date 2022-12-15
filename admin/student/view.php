@@ -8,8 +8,7 @@
     $course = New Course();
     $resCourse = $course->single_course($res->COURSE_ID);
 
-    // $subject = New Subject();
-    // $resSubject = $subject->single_subject($res->SUBJ_ID);
+ 
 
    ?>
     
@@ -37,7 +36,7 @@
           <ul class="list-group">
           
                <li class="list-group-item text-right"><span class="pull-left"><strong>Real name</strong></span> <?php echo $res->FNAME .' '.$res->LNAME; ?> </li>
-              <!--   <li class="list-group-item text-right"><span class="pull-left"><strong>Subject</strong></span> <?php echo $resSubject->SUBJ_CODE .' | '.$resSubject->SUBJ_DESCRIPTION; ?> </li>  -->
+         
               <li class="list-group-item text-right"><span class="pull-left"><strong>Course</strong></span> <?php echo $resCourse->COURSE_NAME .' | '.$resCourse->COURSE_DESC; ?> </li>
               
           </ul> 

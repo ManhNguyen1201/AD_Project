@@ -26,7 +26,7 @@
 
 				  		<th>Description</th>
 				  		<th>Department</th>
-				  		<th width="10%" >Action</th>
+				  		<th width="10%" style="text-align: center; color: red" >Action</th>
 				 
 				  	</tr>	
 				  </thead>     <!-- `COURSE_NAME`, `COURSE_LEVEL`, ``, `COURSE_DESC`, `DEPT_ID` -->

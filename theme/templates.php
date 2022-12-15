@@ -252,6 +252,11 @@ border-color: #f2721e!important
                About Us
              </a>
           </li>
+             <li class="dropdown-toggle <?php echo ($_GET['q']=='profile') ? "active" : false;?> ">
+             <a href="<?php echo web_root.'index.php?q=profile';  ?>"> 
+               Profile Student
+             </a>
+          </li>
           
           </ul>           
         </div> 
@@ -315,7 +320,7 @@ border-color: #f2721e!important
 ?>
        </div>
             <footer class="panel-footer" style="background-color:#f2721e;color:#fff;" >
-              <p align="center" >&copy; Online CHMBAC Student Management System.</p>
+              
            </footer>
       </div>
 

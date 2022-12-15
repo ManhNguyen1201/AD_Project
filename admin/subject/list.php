@@ -30,19 +30,20 @@
 				  		<th>Unit</th>
 				  		<th>Pre-Requisite</th>
 				  		<th>Course</th>
+				  		<th>Year</th>
 				  		<th>Year Level</th>
-				  		<!-- <th>Section</th> -->
+				  		<th>Section</th>
 				  		<th>Semester</th> 
 				  		<th>Status</th>
-				  		<th width="15%" style="text-align: center;" >Action</th>
+				  		<th width="15%" style="text-align: center; color: red"" >Action</th>
 				 
 				  	</tr>	
 				  </thead> 
 				  <tbody>
 				  	<?php
-				  	// $mydb->setQuery("SELECT * FROM  `tblsection` sec, `subject` s, `course` c WHERE sec.`SECTIONID`=s.`SECTIONID` AND s.COURSE_ID=c.COURSE_ID ");
+				  	$mydb->setQuery("SELECT * FROM  `tblsection` sec, `subject` s, `course` c WHERE sec.`SECTIONID`=s.`SECTIONID` AND s.COURSE_ID=c.COURSE_ID ");
 
-				  		$mydb->setQuery("SELECT * FROM `subject` s, `course` c WHERE s.COURSE_ID=c.COURSE_ID");
+				  		// $mydb->setQuery("SELECT * FROM `subject` s, `course` c WHERE s.COURSE_ID=c.COURSE_ID");
 
 				  		$cur = $mydb->loadResultList();
 
@@ -55,9 +56,9 @@
 				  		echo '<td>' . $result->UNIT.'</a></td>';
 				  		echo '<td>'. $result->PRE_REQUISITE.'</td>';
 				  		echo '<td>'. $result->COURSE_NAME.'</td>';
-				  		// echo '<td>' . $result->AY.'</a></td>';
+				  		echo '<td>' . $result->AY.'</a></td>';
 				  		echo '<td>'. $result->YEARLEVEL.'</td>';
-				  		// echo '<td>'. $result->SECTION.'</td>';
+				  		echo '<td>'. $result->SECTION.'</td>';
 				  		echo '<td>'. $result->SEMESTER.'</td>';  
 				  		echo '<td>'. $result->CURRICULUM.'</td>';  
 
@@ -69,7 +70,7 @@
 				  		 }
 				  		echo '<td align="center" > <a title="Edit" href="index.php?view=edit&id='.$result->SUBJ_ID.'"  class="btn btn-primary btn-xs  ">  <span class="fa fa-edit fw-fa"></span></a>
 				  					 <a title="Delete" href="controller.php?action=delete&id='.$result->SUBJ_ID.'" class="btn btn-danger btn-xs" ><span class="fa fa-trash-o fw-fa"></span> </a>
-				  					   <a title="Change Status" href="controller.php?action=curriculum&status='.$status.'&id='.$result->SUBJ_ID.'" class="btn btn-info btn-xs" ><span class="fa fa-wrench-o fw-fa">Change Status</span> </a>
+				  					 
 				  					  </td>';
 				  		echo '</tr>';
 				  	} 

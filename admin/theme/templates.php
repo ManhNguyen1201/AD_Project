@@ -97,7 +97,7 @@ admin_confirm_logged_in();
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="<?php echo web_root; ?>admin/subject/index.php?view=add"><i class="fa fa-book fa-fw"></i> Subject</a></li>
-                        <li><a href="<?php echo web_root; ?>admin/department/index.php?view=add"><i class="fa  fa-building  fa-fw"></i> Department</a> </li>
+                        <li><a href="<?php echo web_root; ?>admin/department/index.php?view=add"><i class="fa  fa-building  fa-fw"></i> Class</a> </li>
                         <li><a href="<?php echo web_root; ?>admin/course/index.php?view=add"><i class="fa  fa-graduation-cap fa-fw"></i> Course</a></li>
                         <!-- <li><a href="<?php echo web_root; ?>admin/instructor/index.php?view=add"><i class="fa  fa-user fa-fw"></i>Set Subject to Instructor</a>
                         </li> --> 
@@ -195,7 +195,7 @@ admin_confirm_logged_in();
                         </li> 
                         <?php } ?>
                         <?php if ($_SESSION['ACCOUNT_TYPE']=='Administrator' || $_SESSION['ACCOUNT_TYPE']=='Officer'  ) {  ?>
-                        <li>
+                   <!--      <li>
                              <a href="#" ><i class="fa fa-money fa-fw"></i>  Transaction  <span class="fa arrow"></span> </a>
                              <ul class="nav nav-second-level">
                                 <li>  <a href="<?php echo web_root; ?>admin/fees/index.php" ><i class="fa fa-circle-o fa-fw"></i>  Payment </a></li> 
@@ -203,7 +203,7 @@ admin_confirm_logged_in();
                                      <a href="<?php echo web_root; ?>admin/expenses/index.php"><i class="fa fa-circle-o fa-fw"></i> Expenses </a>
                                 </li> 
                              </ul>
-                        </li> 
+                        </li>  -->
                         <li>
                              <a href="<?php echo web_root; ?>admin/announcement/index.php" ><i class="fa fa-microphone fa-fw"></i>  Notification </a>
                     
@@ -218,7 +218,7 @@ admin_confirm_logged_in();
                              <a href="<?php echo web_root; ?>admin/subject/index.php"><i class="fa fa-book fa-fw"></i> Subjects </a>
                         </li>  -->
                         <li>
-                            <a href="#"><i class="fa  fa-gear fa-fw"></i> Maintenance <span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa  fa-gear fa-fw"></i> Categories <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                      <a href="<?php echo web_root; ?>admin/maintenance/index.php" ><i class="fa fa-circle-o fa-fw"></i>  Set Semester </a>
@@ -239,7 +239,7 @@ admin_confirm_logged_in();
                                      <a href="<?php echo web_root; ?>admin/level/index.php"><i class="fa fa-circle-o fa-fw"></i> Year Level </a>
                                 </li> 
                                 <li>
-                                     <a href="<?php echo web_root; ?>admin/section/index.php"><i class="fa fa-circle-o fa-fw"></i> Section </a>
+                                     <a href="<?php echo web_root; ?>admin/section/index.php"><i class="fa fa-circle-o fa-fw"></i> Slots </a>
                                 </li> 
                             </ul> 
                             <!-- /.nav-third-level -->
@@ -252,13 +252,13 @@ admin_confirm_logged_in();
                         <li>
                             <a href="<?php echo web_root; ?>admin/back-up/index.php" ><i class="fa fa-database fa-fw"></i> Back-up and Restore </a>
                           
-                        </li>
+                      <!--   </li>
                          <?php }  ?>
                          <?php if ($_SESSION['ACCOUNT_TYPE']=='Administrator' || $_SESSION['ACCOUNT_TYPE']=='Officer'  ) {  ?>
                         <li>
                             <a href="<?php echo web_root; ?>admin/report/index.php" ><i class="fa fa-info fa-fw"></i> Report </a>
                           
-                        </li>
+                        </li> -->
                         <?php } ?>
  
                     </ul>

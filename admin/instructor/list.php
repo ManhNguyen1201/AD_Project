@@ -26,7 +26,7 @@
 				  		<th>Name</th>
 				  	<!-- 	<th>Major</th>  
 				  		<th>Contact No.</th>  -->
-				  		<th width="20%" >Action</th>
+				  		<th width="20%" style="color: red; text-align: center;" >Action</th>
 				 
 				  	</tr>	
 				  </thead> 
@@ -46,7 +46,7 @@
 				  		// echo '<td>'. $result->INST_MAJOR.'</td>'; 
 				  		// echo '<td>'. $result->INST_CONTACT.'</td>'; 
 				  		 
-				  		echo '<td align="center" > <a title="Edit" href="index.php?view=add&id='.$result->ACCOUNT_ID.'"  class="btn btn-primary btn-xs  ">Add Loads <span class="fa fa-plus-circle fw-fa"></span></a>
+				  		echo '<td align="center" > <a title="Add" href="index.php?view=add&id='.$result->ACCOUNT_ID.'"  class="btn btn-primary btn-xs  ">Add Loads <span class="fa fa-plus-circle fw-fa"></span></a>
 				  		<a title="Edit" href="index.php?view=view&id='.$result->ACCOUNT_ID.'"  class="btn btn-info btn-xs  ">View Loads <span class="fa fa-info fw-fa"></span></a>
 				  					 </td>';
 				  		 echo '</tr>';

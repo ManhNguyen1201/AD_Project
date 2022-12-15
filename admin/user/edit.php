@@ -82,6 +82,7 @@
                           <!-- <option value="Customer">Customer</option> -->
                               <option value="Instructor" <?php echo ($singleuser->ACCOUNT_TYPE=='Instructor') ? 'selected="true"': '' ; ?>>Instructor</option>
                      <!-- <option value="Encoder" <?php echo ($singleuser->ACCOUNT_TYPE=='Encoder') ? 'selected="true"': '' ; ?>>Encoder</option> -->
+                              
                         </select> 
                       </div>
                     </div>

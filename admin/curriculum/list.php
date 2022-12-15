@@ -34,7 +34,7 @@
 				  		<!-- <th>Academic Year</th> -->
 				  		<th>Semester</th>
 				  		<th>Status</th>
-				  		<th width="10%" >Action</th>
+				  		<th width="10%" style="color: red; text-align: center;" >Action</th>
 				 
 				  	</tr>	
 				  </thead> 

@@ -23,16 +23,14 @@
 				  <thead>
 				  	<tr>
 				  		<th>ID</th>
-				  		<th>
-				  		 <!-- <input type="checkbox" name="chkall" id="chkall" onclick="return checkall('selector[]');">  -->
-				  		 Name</th>
+				  		<th>Name</th>
 				  		<th>Sex</th> 
 				  		<th>Age</th>
 				  		<th>Address</th>
 				  		<th>Contact No.</th>
 				  		<th>Course</th>
 				  		<!-- <th>Status</th> -->
-				  		<th>Action</th>
+				  		<th style="text-align: center; color: red">Action</th>
 				 
 				  	</tr>	
 				  </thead> 
@@ -83,7 +81,7 @@
 					  					<a title="View Information" href="index.php?view=view&id='.$result->IDNO.'"  class="btn btn-info btn-xs  ">View <span class="fa fa-info-circle fw-fa"></span></a>
 					  					 <a title="View Grades" href="index.php?view=grades&id='.$result->IDNO.'" class="btn btn-primary btn-xs" >Grades <span class="fa fa-info-circle fw-fa"></span> </a> 
 					  					'.$status.'
-					  					<a title="View Grades" href="controller.php?action=resetpassword&id='.$result->IDNO.'" class="btn btn-primary btn-xs" >Reset Password <span class="fa fa-pencil  fw-fa"></span> </a> 
+					  					 		 
 					  	       </td>';
 				  		}else{
 
@@ -111,3 +109,7 @@
 	
 
 </div> <!---End of container-->
+
+
+
+

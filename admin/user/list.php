@@ -31,7 +31,7 @@ if ($_SESSION['ACCOUNT_TYPE']!='Administrator'){
 				  		 Account Name</th>
 				  		<th>Username</th>
 				  		<th>Role</th>
-				  		<th width="20%" >Action</th>
+				  		<th width="20%" style="color: red; text-align: center;" >Action</th>
 				 
 				  	</tr>	
 				  </thead> 

@@ -53,14 +53,14 @@ switch ($action) {
 
 			}else{
 				$subj = New Subject();
-			// $subj->USERID 		= $_POST['user_id'];
+				// $subj->USERID 		= $_POST['user_id'];
 				$subj->SUBJ_CODE 		= $_POST['SUBJ_CODE'];
 				$subj->SUBJ_DESCRIPTION	= $_POST['SUBJ_DESCRIPTION']; 
 				$subj->UNIT				= $_POST['UNIT'];
 				$subj->PRE_REQUISITE 	= $_POST['PRE_REQUISITE'];
 				$subj->COURSE_ID		= $_POST['COURSE_ID']; 
 				$subj->YEARLEVEL		= $_POST['YEARLEVEL']; 
-				// $subj->SECTIONID		= $_POST['SECTIONID'];  
+				$subj->SECTIONID		= $_POST['SECTIONID'];  
 				$subj->AY				= $_POST['AY']; 
 				$subj->SEMESTER			= $_POST['SEMESTER'];
 				$subj->create();
@@ -89,7 +89,7 @@ switch ($action) {
 			$subj->PRE_REQUISITE 	= $_POST['PRE_REQUISITE'];
 			$subj->COURSE_ID		= $_POST['COURSE_ID']; 
 			$subj->YEARLEVEL		= $_POST['YEARLEVEL']; 
-			// $subj->SECTIONID		= $_POST['SECTIONID'];  
+			$subj->SECTIONID		= $_POST['SECTIONID'];  
 		    $subj->AY				= $_POST['AY']; 
 			$subj->SEMESTER			= $_POST['SEMESTER'];
 			$subj->update($_POST['SUBJ_ID']);
